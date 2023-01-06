@@ -1,7 +1,8 @@
 package com.silverorange.videoplayer.domain
 
+import com.silverorange.videoplayer.models.OutResult
 import com.silverorange.videoplayer.models.Videos
 
 interface Repository {
-    suspend fun getVideosFromServer(result: (listVideos: List<Videos>) -> Unit)
+    fun getVideosFromServer(result: (listVideos: OutResult) -> Unit)
 }
