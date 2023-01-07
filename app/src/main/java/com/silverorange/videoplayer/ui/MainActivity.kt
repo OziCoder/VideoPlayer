@@ -55,6 +55,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 else -> {
                     binding.progress.visibility = View.GONE
+                    binding.btnPlayPause.visibility = View.INVISIBLE
+                    binding.btnPrev.visibility = View.INVISIBLE
+                    binding.btnNxt.visibility = View.INVISIBLE
                     Snackbar.make(
                         this.findViewById(android.R.id.content),
                         it.message,
