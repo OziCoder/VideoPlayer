@@ -18,22 +18,22 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnPlayPause"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp65"
             android:layout_centerInParent="true"></androidx.appcompat.widget.AppCompatImageView>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnPrev"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
             android:layout_centerInParent="true"
             android:layout_toLeftOf="@id/btnPlayPause"
             app:srcCompat="@drawable/ic_previous"></androidx.appcompat.widget.AppCompatImageView>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/btnNxt"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
             android:layout_centerInParent="true"
             android:layout_toRightOf="@id/btnPlayPause"
             app:srcCompat="@drawable/ic_next"></androidx.appcompat.widget.AppCompatImageView>
@@ -44,14 +44,12 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/mainRl">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ScrollView>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
             android:layout_marginLeft="@dimen/margin_standard"
             android:layout_marginTop="@dimen/margin_standard"
             android:textColor="@color/black"></androidx.appcompat.widget.AppCompatTextView>
@@ -61,26 +59,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
+            android:textSize="14sp"
             android:layout_marginLeft="@dimen/margin_standard"
             android:layout_marginTop="@dimen/margin_standard"
-            android:textColor="@color/gray"></androidx.appcompat.widget.AppCompatTextView>
+            android:textColor="@color/black"></androidx.appcompat.widget.AppCompatTextView>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/description"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_below="@+id/author"
             android:layout_marginLeft="@dimen/margin_standard"
             android:layout_marginTop="@dimen/margin_standard"
             android:singleLine="false"
             android:textColor="@color/black"></androidx.appcompat.widget.AppCompatTextView>
+
     </RelativeLayout>
 
     <androidx.core.widget.ContentLoadingProgressBar
         android:id="@+id/progress"
         style="?android:attr/progressBarStyleLarge"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
