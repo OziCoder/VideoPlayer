@@ -16,8 +16,6 @@ import com.silverorange.videoplayer.utils.AppConstants
 import dagger.hilt.android.AndroidEntryPoint
 import io.noties.markwon.Markwon
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import java.util.*
 import kotlin.collections.ArrayList
 
